@@ -47,3 +47,20 @@ section:only-child {
 /* add a media query to change layout and order of items */
 
 /* task - position items in this order: 6, 4, 2, 5, 3, 1 */
+@media (min-width: 56.25rem){
+    section:last-child {
+        order: -5;        
+    }
+    section:nth-last-child(3){
+        order: -4;
+    }
+    section:nth-child(2){
+        order: -3;
+    }
+    section:nth-last-child(2){
+        order: -2;
+    }
+    section:nth-child(3) {
+        order: -1;
+    }
+}
